@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-botao',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BotaoPage implements OnInit {
 
-  constructor() { }
+  constructor(private nav: NavController) { }
 
   ngOnInit() {
   }
-
+  showPage(){
+     this.nav.navigateForward('home');
+  }
 }

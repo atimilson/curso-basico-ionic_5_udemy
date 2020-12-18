@@ -1,9 +1,33 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>botao</ion-title>
+  <ion-toolbar color='primary'>
+    
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+      <ion-title>Botoes</ion-title>
+    </ion-buttons>   
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-button>nome default</ion-button>
+
+  <ion-button color='danger'>nome default color</ion-button>
+  <ion-button color='dark'>nome default color</ion-button>
+
+  <ion-button expand='full'>nome default full</ion-button>
+  <ion-button expand='block' fill='outline'>nome default block</ion-button>
+
+  <ion-button shape='round' fill='outline'>nome default shape</ion-button>  
+  <ion-button>
+    <ion-icon slot="start" name="star"></ion-icon>
+    Left Icon
+  </ion-button>
+
+  <ion-button>
+    <ion-icon slot="icon-only" name="star"></ion-icon> 
+  </ion-button>
+
+  <ion-button expand="black" color="danger" (click)="showPage()">Pagina Principal</ion-button>
 
 </ion-content>
